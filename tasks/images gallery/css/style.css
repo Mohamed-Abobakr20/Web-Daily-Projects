@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #4a3f35;
+}
+
+.head-section {
+    padding: 3%;
+    margin: 3%;
+    text-align: center;
+    background-color: #fa7d09;
+    color: white;
+    border-radius: 10px;
+}
+
+.head-section h1 {
+    width: 70%;
+    margin: auto;
+    padding: 1.5%;
+    background-color: #4a3f35;
+    font-weight: lighter;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+.head-section .container-head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.head-section .btn {
+    width: 150px;
+    border: none;
+    outline: none;
+    padding: 1% 2%;
+    margin-top: 2%;
+    background-color: #4a3f35;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.gallery {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery .row img {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.foot-section {
+    padding: 3%;
+    margin: 3%;
+    text-align: center;
+    background-color: #fa7d09;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-section .container-foot:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.foot-section .container-foot:first-child .img-cont {
+    width: 80px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.foot-section .container-foot:first-child h2 {
+    font-weight: lighter;
+    width: 150px;
+    background-color: #4a3f35;
+    padding: 3% 3%;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.foot-section .container-foot:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.foot-section .container-foot:last-child i {
+    margin-left: 15px;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .head-section h1 {
+        width: 90%;
+    }
+    .foot-section {
+        display: block;
+        padding: 4%;
+    }
+}
+
+.foot-section .container-foot:first-child h2 {
+    padding: 1% 1%;
+}
+
+.foot-section .container-foot:last-child {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
